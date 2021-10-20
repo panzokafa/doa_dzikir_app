@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_item">
+
+
+   <TextView
+       android:id="@+id/tv_desc"
+       android:layout_width="match_parent"
+       android:textSize="16sp"
+       android:padding="16dp"
+       android:layout_height="wrap_content"
+       app:layout_constraintTop_toTopOf="parent"
+       android:text="Dummy Text view"
+       android:textStyle="bold"
+       android:fontFamily="@font/arabic_arihna"
+       android:textColor="@color/blue" />
+
+
+    <TextView
+        android:id="@+id/tv_lafaz"
+        app:layout_constraintTop_toBottomOf="@id/tv_desc"
+        android:text="Dummy"
+        android:textAlignment="textEnd"
+        android:textColor="@color/blue"
+        android:padding="16dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/arabic_arihna"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:id="@+id/terjemah"
+        app:layout_constraintTop_toBottomOf="@id/tv_lafaz"
+        android:padding="14dp"
+        android:textStyle="italic"
+        android:textColor="@color/blue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
